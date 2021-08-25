@@ -1,0 +1,6 @@
+server:
+  port: 8082
+my:
+  name: Age
+  age: 10
+  surname: Kuznetsov
