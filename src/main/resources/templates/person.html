@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.6.0-1/css/bootstrap.min.css}"/>
+</head>
+<body>
+<script th:src="@{/webjars/bootstrap/4.6.0-1/js/bootstrap.bundle.min.js}"></script>
+
+<div>
+    <h1>Persons</h1>
+    <table class="table">
+        <tr>
+            <th>Identifier</th>
+            <th>The product's name</th>
+        </tr>
+        <tr th:each="person : ${person}">
+            <td th:text="${person.id}">...</td>
+            <td th:text="${person.name}">...</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
